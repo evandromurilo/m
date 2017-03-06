@@ -43,7 +43,6 @@ int read_line(char *arr, int max) {
 }
 
 int strcmpr_first(char *a, char *b, int n) {
-	printf("comparing %s with %s\n", a, b);
 	for (int i = 0; i < n; ++i) 
 		if (a[i] != b[i]) return a[i] - b[i];
 
