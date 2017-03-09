@@ -23,4 +23,17 @@ int read_line(char *arr, int max);
 // if a == b, returns 0
 int strcmpr_first(char *a, char *b, int n);
 
+
+// read_char: returns the pushed char or a char read with getchar()
+int read_char();
+
+// push_char: pushes a char
+void push_char(int c);
+
+// discard_until: discards chars until 'goal' or EOF is found
+int discard_until(int goal);
+
+// read_until: reads chars into 'str' until 'goal' or EOF is found, or size-1 chars are read
+int read_until(int goal, char* str, int size);
+
 #endif

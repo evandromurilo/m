@@ -48,3 +48,43 @@ int strcmpr_first(char *a, char *b, int n) {
 
 	return 0;
 }
+
+int pushed = EOF-1;
+
+int read_char() {
+	char c;
+
+	if (pushed >= EOF) {
+		c = pushed;
+		pushed = EOF-1;
+	}
+	else {
+		c = getchar();
+	}
+
+	return c;
+}
+
+void push_char(int c) {
+	pushed = c;
+}
+
+int discard_until(int goal) {
+	int c, n = 0;
+
+	while ((c = read_char()) != goal && c != EOF) ++n;
+
+	push_char(c);
+	return n;
+}
+
+int read_until(int goal, char* str, int size) {
+	int c, i;
+
+	for (i = 0; i < size-1 && (c = read_char()) != goal && c != EOF; ++str) {
+		*str = c;
+	}
+
+	*str = '\0';
+	return i;
+}
