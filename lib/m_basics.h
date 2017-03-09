@@ -23,7 +23,6 @@ int read_line(char *arr, int max);
 // if a == b, returns 0
 int strcmpr_first(char *a, char *b, int n);
 
-
 // read_char: returns the pushed char or a char read with getchar()
 int read_char();
 
