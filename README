@@ -1,7 +1,7 @@
-#m
-yo
+M
 
-Author: Evandro Murilo
-Description: common C functions that I use
+AUTHOR: Evandro Murilo
 
-lib/m_basics: very simple read and string related functions
+DESCRIPTION: common C functions that I use. I reinvent the wheel a few times, usually for learning purposes.
+
+lib/m_basics: very simple read, string and math related functions
