@@ -51,6 +51,8 @@ int discard_while(char *goals);
 // returns the amount of chars read
 int read_until(int goal, char* str, int size);
 
+bool char_in_string(char c, char *goals);
+
 // split: splits 'str' into various strings with 'goal' being the separator
 // strings are stored in the array 'arr' of size 'size'
 // returns the resulting amount of strings

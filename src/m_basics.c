@@ -113,6 +113,16 @@ int read_until(int goal, char* str, int size) {
 	return i;
 }
 
+bool char_in_string(char c, char *goals) {
+	while (*goals != '\0') {
+		if (*goals == c) {
+			return true;
+		}
+		goals++;
+	}
+	return false;
+}
+
 #define MAX_WORD_SIZE 100
 int split(char** arr, int size, char* str, char goal) {
 	char word[MAX_WORD_SIZE+1];
