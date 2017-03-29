@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
+#include <string.h>
 #include "m_basics.h"
 #include "m_list.h"
 

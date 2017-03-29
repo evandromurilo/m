@@ -1,9 +1,6 @@
 #ifndef M_BASICS_H
 #define M_BASICS_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <stdbool.h>
 
 // len: returns the length of the string 's'

@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "m_basics.h"
 
 char *concat(char *a, char *b) {
