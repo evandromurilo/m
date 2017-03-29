@@ -12,7 +12,7 @@ struct LinkedList *init_list() {
 	return list;
 }
 
-void append_to_list(struct LinkedList *list, void *value) {
+void list_append(struct LinkedList *list, void *value) {
 	struct LinkedNode *new = malloc(sizeof(struct LinkedNode));
 	new->next = NULL;
 	new->prev = list->last;
@@ -29,7 +29,7 @@ void append_to_list(struct LinkedList *list, void *value) {
 	++(list->length);
 }
 
-void prepend_to_list(struct LinkedList *list, void *value) {
+void list_prepend(struct LinkedList *list, void *value) {
 	struct LinkedNode *new = malloc(sizeof(struct LinkedNode));
 	new->next = list->first;
 	new->prev = NULL;
@@ -46,7 +46,7 @@ void prepend_to_list(struct LinkedList *list, void *value) {
 	++(list->length);
 }
 
-void *pop_first(struct LinkedList *list) {
+void *list_popf(struct LinkedList *list) {
 	if (list->length == 0) return NULL;
 
 	void *value = list->first->value;
@@ -68,7 +68,7 @@ void *pop_first(struct LinkedList *list) {
 	return value;
 }
 
-void *pop_last(struct LinkedList *list) {
+void *list_popl(struct LinkedList *list) {
 	if (list->length == 0) return NULL;
 
 	void *value = list->last->value;
@@ -119,7 +119,7 @@ int split_linked(struct LinkedList *list, char* str, char *goal) {
 		char* nword = malloc(i);
 		strcpy(nword, word);
 
-		append_to_list(list, nword);
+		list_append(list, nword);
 		++total;
 	}
 
