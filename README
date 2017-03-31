@@ -5,3 +5,4 @@ AUTHOR: Evandro Murilo
 DESCRIPTION: common C functions that I use. I reinvent the wheel a few times, usually for learning purposes.
 
 lib/m_basics: very simple read, string and math related functions
+lib/m_list: a linked list implementation
